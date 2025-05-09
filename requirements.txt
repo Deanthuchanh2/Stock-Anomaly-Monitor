@@ -5,5 +5,3 @@ plotly>=5.0.0
 fpdf>=1.7.2
 xlsxwriter>=3.0.0
 azureml-sdk>=1.44.0
-azureml-dataprep>=4.1.0
-azureml-dataset-runtime>=1.44.0

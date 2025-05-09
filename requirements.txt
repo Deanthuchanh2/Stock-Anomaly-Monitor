@@ -3,5 +3,5 @@ pandas==1.5.3
 plotly==5.14.1
 fpdf==1.7.2
 xlsxwriter==3.1.2
-azureml-core==1.43.0
-setuptools==65.5.0
+azure-identity>=1.12.0
+azure-storage-blob>=12.14.1

@@ -3,3 +3,4 @@ pandas==2.2.2
 plotly==5.14.1
 fpdf==1.7.2
 xlsxwriter==3.1.2
+azureml-core==1.54.0

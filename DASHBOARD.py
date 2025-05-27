@@ -21,20 +21,15 @@ except ImportError:
 auth = InteractiveLoginAuthentication(tenant_id="79f22664-3501-4e6b-a5eb-7a0de80c4e0f")
 ws = Workspace(
     subscription_id="ac1d1618-29fc-4fab-a96d-aa004a3d7fcd",
-    resource_group="DuyHoang", 
+    resource_group="DuyHoang",
     workspace_name="DUYHOANG_ML",
     auth=auth
 )
 datastore = ws.get_default_datastore()
 remote_path = "UI/OUTCOME/dunusual_stock.csv"
-local_path = "dunusual_stock.csv"
-print("⬇️ Đang tải file từ Azure...")
-datastore.download(
-    target_path=".",             
-    prefix=remote_path,           
-    overwrite=True,
-    show_progress=True
-)
+datastore.download(target_path=".", prefix=remote_path, overwrite=True, show_progress=True)
+local_path = "UI/OUTCOME/dunusual_stock.csv"
+
 try:
     df = pd.read_csv(local_path, encoding="utf-8-sig")
 except UnicodeDecodeError:
